@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=K2D|Krub|Mali');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+/*
+
+font-family: 'K2D', sans-serif;
+font-family: 'Krub', sans-serif;
+font-family: 'Mali', cursive;
+font-family: 'Indie Flower', cursive;
+
+*/
+
+body, html{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.nav {
+    width: 100%;
+    height: 75px;
+    padding: 0;
+    margin: 0;
+    display: block;
+    background-color: #21201f;
+}
+
+.nav h1{
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    color: orange;
+    font-family: 'K2D', sans-serif;
+    font-size: 50px;
+}
+
+.nav a, a:visited{
+    padding: 15px;
+    margin: 5px;
+    display: inline-block;
+    float: right;
+
+    font-family: 'Krub', sans-serif;
+    font-size: 25px;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover{
+    background-color: #21201f;
+    color: orange;
+}
+
+.main {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 75px;
+    text-align: center;
+    font-family: 'Mali', cursive;
+}
+
+.main a {
+    font-family: serif;
+    font-size: 15px;
+    color: blue;
+}
+
+.basic_image {
+    width: 50vh;
+    height: 35vh;
+}
+
+.basic_image_large {
+    width: 80vh;
+    height: 75vh;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Spooky Maths</title>
+        <link rel="stylesheet" type="text/css" href="lesson.css" />
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+    </head>
+    <body>
+        <div class="nav">
+            <h1>Spooky Maths</h1>
+            <a class="nav_links" href="about.html">ABOUT</a>
+            <a class="nav_links" href="activities.html">ACTIVITIES</a>
+            <a class="nav_links" href="survey.html">SURVEY</a>
+            <a class="nav_links" href="article.html">ARTICLE</a>
+            <a class="nav_links" href="lesson.html">LESSON</a>
+            <a class="nav_links" href="index.html">HOME</a>
+        </div>
+        <div class="main">
+            <h1>Transformation of Functions</h1>
+            <p>Before we jump into the main lesson, there are some things we need to know first.</p>
+            <p>The first thing we must discuss is parent functions. A parent function is like the root of a function. For example, you may have a function: $$f\left(x\right)=\left(x+5\right)^2$$ The parent function of this would be $$f\left(x\right)=x^2$$  </p>
+            <p>Below is a chart of parent functions and their graphs.</p>
+            <img class="basic_image_large" src="parent_functions.png" alt="Parent Fucntions Chart"/>
+            <a href="https://www.pinterest.com/pin/357965870365296899/">https://www.pinterest.com/pin/357965870365296899/</a>
+            <p>Now that we know about parent functions we can use them to create new functions or identify existing functions. To create these new functions, we must learn about the various transformations.</p>
+            <p>First off are horizontal shifts. If there is a number being added to x inside of parenthesis, (x+5), there is a horizontal shift left. If there is a number being subtracted from x inside of parenthesis, (x-5), there is a horizontal shift right.</p>
+            <p>Next is vertical shifts. If there is a number being added to x outside of parenthesis, x+5, there is a vertical shift up. If there is a number being subtracted from x outside the parenthesis, x-5, there is a vertical shift down.</p>
+            <p>Then there is reflections across the x-axis. If the function is negative, f(x) = -g(x), then there is a reflection across the x-axis. If the function has negative x, f(x) = g(-x), then there is a reflection accross the y-axis.</p>
+            <p>There is also vertical stretching and shrinking. If x is being multiplied by a number, such as $$4x^2$$ then there is a vertical stretch. If x is being multiplied by a fraction, such as $$1/4x^2$$ then there is vertical shrinking.</p>
+            <p>Finally there is horizontal stretching and shrinking. If x is being multiplied by a number inside parenthesis, such as $$(4x)$$ then there is a horizontal shrink. If x is being multiplied by a fraction inside parenthesis, such as $$(1/4x)$$ then there is horizontal stretching.</p>
+            <p>The chart below shows all this information.</p>
+            <img class="basic_image_large" src="transformation_functions.png" alt="Transformation of Functions Chart" />
+            <br>
+            <a href="https://www.onlinemathlearning.com/transformation-linear-functions.html">https://www.onlinemathlearning.com/transformation-linear-functions.html</a>
+            <br><br><br><br>
+            <h1>Examples</h1>
+            <p>Parent Function: $$f(x) = x^2$$
+            <iframe src="https://www.desmos.com/calculator/w6jfjiudd4?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe><br>
+                Horizontal shift 5 right and Vertical shift up 2: $$f(x) = x^2$$ $$f(x) = (x-5)^2$$ $$f(x) = (x-5)^2+2$$
+            <iframe src="https://www.desmos.com/calculator/2b2cyegucj?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
+            </p>
+            <p>Parent Function: $$f(x) = |x|$$
+            <iframe src="https://www.desmos.com/calculator/mjuk0e2kdo?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe><br>
+                Vertical Stretch 3 and Reflect accross the x-axis: $$f(x) = |x|$$ $$f(x) = 3|x|$$ $$f(x) = -3|x|$$
+            <iframe src="https://www.desmos.com/calculator/sssmnemlsl?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
+            </p>
+            <h1>Word Problem</h1>
+            <p>There is a function $$f\left(x\right)=\sqrt{x}$$ Reflect the function over the x-axis. Then, move it 4 units to the left and 3 units up.</p>
+            <script>
+              function ShowAnswer(){
+                document.getElementById('answer').style.display = "block";
+                document.getElementById('answer_button').innerHTML = "Scroll Down";
+              }
+            </script>
+            <button id="answer_button" onclick="ShowAnswer()">Show Answer</button>
+            <div id="answer" style="display: none;">
+              <h1>Answer To Word Problem</h1>
+              <p>$$f\left(x\right)=\sqrt{x}$$ $$f\left(x\right)=-\sqrt{x}$$ $$f\left(x\right)=-\sqrt{x+4}$$ $$f\left(x\right)=-\sqrt{x+4}+3$$
+                <iframe src="https://www.desmos.com/calculator/7zyenqxton?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
+              </p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Spooky Maths</title>
+        <link rel="stylesheet" type="text/css" href="lesson.css" />
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+    </head>
+    <body>
+        <div class="nav">
+            <h1>Spooky Maths</h1>
+            <a class="nav_links" href="about.html">ABOUT</a>
+            <a class="nav_links" href="activities.html">ACTIVITIES</a>
+            <a class="nav_links" href="survey.html">SURVEY</a>
+            <a class="nav_links" href="article.html">ARTICLE</a>
+            <a class="nav_links" href="lesson.html">LESSON</a>
+            <a class="nav_links" href="index.html">HOME</a>
+        </div>
+        <div class="main">
+          <h1>How are transformations of functions used in real life?</h1>
+          <p>There are a whole bunch of ways in which transformations of functions can be used in real life. Here is an example: Let us say that you have a graph representing your companies' profits over time. The current function of this graph is $$f\left(x\right)=\sqrt{x}$$ <br><br><iframe src="https://www.desmos.com/calculator/4nadi1ntw0?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe><br><br>Now what if you want to see what the companies' profits would look life if they tripled. Simply multiply by 3. Now you have $$f\left(x\right)=3\sqrt{x}$$<br><br><iframe src="https://www.desmos.com/calculator/gzxxsyigfe?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe><br><br> and you can now see what the profits would look like tripled on the graph.</p>
+            <h1>Word Problems</h1>
+            <p>Your companies' profits over the past few years can be represented by the function $$f(x)=|x|$$ <br><br><iframe src="https://www.desmos.com/calculator/1bm4ply9p8?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe><br><br> With the x-axis being years and the y-axis being dollars in millions. Your boss wants you to find out what would happen if the company started off with an extra $3 million. You must find the function and the graph.</p>
+            <script>
+              function ShowAnswer(){
+                document.getElementById('answer').style.display = "block";
+                document.getElementById('answer_button').innerHTML = "Scroll Down";
+              }
+            </script>
+            <button id="answer_button" onclick="ShowAnswer()">Show Answer</button>
+            <div id="answer" style="display: none;">
+              <h1>Answer To Word Problem</h1>
+              <p>$$f(x)=|x|$$ $$f(x)=|x|+3$$</p>
+              <br><br><iframe src="https://www.desmos.com/calculator/hodrksqw40?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe><br><br>
+            </div>
+            <h1>Word Problem 2</h1>
+            <p>Your friends' bank account over the past few weeks can be represented by the function $$f\left(x\right)=\sqrt{x}$$ <br><br><iframe src="https://www.desmos.com/calculator/xx3pymmr65?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe><br><br> With the x-axis being weeks and the y-axis being dollars. Your friend wants you to find out what would happen if the bank account was opened five weeks ago and started with 2 dollars. You must find the function and the graph.</p>
+            <script>
+              function ShowAnswer(){
+                document.getElementById('answer_2').style.display = "block";
+                document.getElementById('answer_button').innerHTML = "Scroll Down";
+              }
+            </script>
+            <button id="answer_button" onclick="ShowAnswer()">Show Answer</button>
+            <div id="answer_2" style="display: none;">
+              <h1>Answer To Word Problem 2</h1>
+              <p>$$f\left(x\right)=\sqrt{x}$$ $$f\left(x\right)=\sqrt{x+5}$$ $$f\left(x\right)=\sqrt{x+5}+2$$</p>
+              <br><br><iframe src="https://www.desmos.com/calculator/mc9saeo95t?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe><br><br>
+            </div>
+        </div>
+    </body>
+</html>
